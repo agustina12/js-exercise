@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Tip</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Quick Tip</h1>
+      <section id="bill">
+        <!-- input bill -->
+        <div id="input-bill">
+          <label for="yourBill">Bill</label>
+          <input type="number" placeholder="Your Bill" id="yourBill" />
+        </div>
+        <!-- select tip -->
+        <div class="select-tip">
+          <div>
+            <label for="">Select tip</label>
+            <span id="tip">20%</span>
+          </div>
+          <div>
+            <input type="range" value="0" id="tipInput" />
+          </div>
+        </div>
+        <!-- tip -->
+        <div class="tip">
+          <div>
+            <label for="tip">Tip</label>
+            <span id="tip">$9.40</span>
+          </div>
+        </div>
+        <hr />
+        <!-- total tip -->
+        <div class="totalBill">
+          <label for="total">Total</label>
+          <span id="total">$56.40</span>
+        </div>
+      </section>
+      <section id="split">
+        <div>
+          <label for="">Split</label>
+          <span id="valueSplit">1 person</span>
+        </div>
+        <div>
+          <input type="range" min="1" max="10" value="1" id="splitInput" />
+        </div>
+        <div>
+          <label for="">Bill each</label>
+          <span id="valueBill">$9.0</span>
+        </div>
+        <div>
+          <label for="">Tip each</label>
+          <span id="total">$0.40</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
